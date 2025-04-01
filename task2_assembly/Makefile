@@ -1,48 +1,12 @@
-# Makefile for Assembly Name Counter (Task 2)
+# Simple Makefile for Assembly Name Counter
 
-# Program name
-TARGET = count_names
+count_names: count_names.o
+	ld -o count_names count_names.o
 
-# Assembler and Linker
-AS = nasm
-LD = ld
+count_names.o: count_names.asm
+	nasm -f elf64 count_names.asm -o count_names.o
 
-# Flags
-ASFLAGS = -f elf64
-LDFLAGS = 
-
-# Object files
-OBJS = $(TARGET).o
-
-# Default target
-all: $(TARGET)
-
-# Build the executable
-$(TARGET): $(OBJS)
-	$(LD) $(LDFLAGS) -o $@ $^
-
-# Compile assembly to object file
-$(TARGET).o: $(TARGET).asm
-	$(AS) $(ASFLAGS) -o $@ $
-
-# Generate a test names file if it doesn't exist
-names.txt:
-	@echo "Generating sample names.txt file..."
-	@for i in {1..50}; do \
-		echo "Name$$i" >> $@; \
-	done
-
-# Run the program
-run: $(TARGET) names.txt
-	./$(TARGET)
-
-# Clean compiled files
 clean:
-	rm -f $(TARGET) $(OBJS)
+	rm -f count_names count_names.o
 
-# Clean all generated files
-distclean: clean
-	rm -f names.txt
-
-# phony targets
-.PHONY: all run clean distclean
+.PHONY: clean
