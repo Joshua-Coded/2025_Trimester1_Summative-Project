@@ -1,0 +1,100 @@
+10:    1008:	48 8b 05 d9 2f 00 00 	mov    0x2fd9(%rip),%rax        # 3fe8 <__gmon_start__@Base>
+110:    1146:	49 89 d1             	mov    %rdx,%r9
+112:    114a:	48 89 e2             	mov    %rsp,%rdx
+118:    1158:	48 8d 3d be 02 00 00 	lea    0x2be(%rip),%rdi        # 141d <main>
+125:    1170:	48 8d 3d 99 2e 00 00 	lea    0x2e99(%rip),%rdi        # 4010 <__TMC_END__>
+126:    1177:	48 8d 05 92 2e 00 00 	lea    0x2e92(%rip),%rax        # 4010 <__TMC_END__>
+129:    1183:	48 8b 05 56 2e 00 00 	mov    0x2e56(%rip),%rax        # 3fe0 <_ITM_deregisterTMCloneTable@Base>
+138:    11a0:	48 8d 3d 69 2e 00 00 	lea    0x2e69(%rip),%rdi        # 4010 <__TMC_END__>
+139:    11a7:	48 8d 35 62 2e 00 00 	lea    0x2e62(%rip),%rsi        # 4010 <__TMC_END__>
+141:    11b1:	48 89 f0             	mov    %rsi,%rax
+147:    11c4:	48 8b 05 25 2e 00 00 	mov    0x2e25(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable@Base>
+162:    11f6:	48 89 e5             	mov    %rsp,%rbp
+164:    11fb:	48 8b 3d 06 2e 00 00 	mov    0x2e06(%rip),%rdi        # 4008 <__dso_handle>
+181:    122e:	48 89 e5             	mov    %rsp,%rbp
+183:    1238:	48 89 bd 78 ff ff ff 	mov    %rdi,-0x88(%rbp)
+184:    123f:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+186:    1248:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+189:    1255:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+190:    125c:	48 8d 15 a5 0d 00 00 	lea    0xda5(%rip),%rdx        # 2008 <_IO_stdin_used+0x8>
+191:    1263:	48 89 d6             	mov    %rdx,%rsi
+192:    1266:	48 89 c7             	mov    %rax,%rdi
+194:    126e:	48 89 45 88          	mov    %rax,-0x78(%rbp)
+197:    1279:	48 8d 05 8a 0d 00 00 	lea    0xd8a(%rip),%rax        # 200a <_IO_stdin_used+0xa>
+198:    1280:	48 89 c7             	mov    %rax,%rdi
+200:    1288:	b8 ff ff ff ff       	mov    $0xffffffff,%eax
+203:    1293:	48 8b 55 88          	mov    -0x78(%rbp),%rdx
+204:    1297:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+205:    129b:	be 64 00 00 00       	mov    $0x64,%esi
+206:    12a0:	48 89 c7             	mov    %rax,%rdi
+210:    12ad:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+211:    12b1:	48 89 c7             	mov    %rax,%rdi
+213:    12b9:	8b 45 84             	mov    -0x7c(%rbp),%eax
+214:    12bc:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+225:    12d7:	48 89 e5             	mov    %rsp,%rbp
+227:    12de:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+229:    12e4:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+232:    12ee:	89 c7                	mov    %eax,%edi
+234:    12f5:	89 c2                	mov    %eax,%edx
+235:    12f7:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+236:    12fb:	88 10                	mov    %dl,(%rax)
+238:    1302:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+250:    1316:	48 89 e5             	mov    %rsp,%rbp
+252:    1320:	48 89 bd 78 ff ff ff 	mov    %rdi,-0x88(%rbp)
+253:    1327:	48 89 b5 70 ff ff ff 	mov    %rsi,-0x90(%rbp)
+254:    132e:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+256:    1337:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+258:    133d:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+259:    1344:	48 8d 15 bd 0c 00 00 	lea    0xcbd(%rip),%rdx        # 2008 <_IO_stdin_used+0x8>
+260:    134b:	48 89 d6             	mov    %rdx,%rsi
+261:    134e:	48 89 c7             	mov    %rax,%rdi
+263:    1356:	48 89 45 80          	mov    %rax,-0x80(%rbp)
+266:    1361:	48 8d 05 b5 0c 00 00 	lea    0xcb5(%rip),%rax        # 201d <_IO_stdin_used+0x1d>
+267:    1368:	48 89 c7             	mov    %rax,%rdi
+270:    1375:	48 8b 85 70 ff ff ff 	mov    -0x90(%rbp),%rax
+271:    137c:	48 8d 15 b3 0c 00 00 	lea    0xcb3(%rip),%rdx        # 2036 <_IO_stdin_used+0x36>
+272:    1383:	48 89 d6             	mov    %rdx,%rsi
+273:    1386:	48 89 c7             	mov    %rax,%rdi
+275:    138e:	48 89 45 88          	mov    %rax,-0x78(%rbp)
+278:    1399:	48 8d 05 98 0c 00 00 	lea    0xc98(%rip),%rax        # 2038 <_IO_stdin_used+0x38>
+279:    13a0:	48 89 c7             	mov    %rax,%rdi
+281:    13a8:	48 8b 45 80          	mov    -0x80(%rbp),%rax
+282:    13ac:	48 89 c7             	mov    %rax,%rdi
+285:    13b6:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+286:    13ba:	48 89 c7             	mov    %rax,%rdi
+288:    13c2:	48 8b 55 88          	mov    -0x78(%rbp),%rdx
+289:    13c6:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+290:    13ca:	48 89 d6             	mov    %rdx,%rsi
+291:    13cd:	48 89 c7             	mov    %rax,%rdi
+293:    13d5:	48 8b 55 80          	mov    -0x80(%rbp),%rdx
+294:    13d9:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+295:    13dd:	be 64 00 00 00       	mov    $0x64,%esi
+296:    13e2:	48 89 c7             	mov    %rax,%rdi
+300:    13ef:	48 8b 45 80          	mov    -0x80(%rbp),%rax
+301:    13f3:	48 89 c7             	mov    %rax,%rdi
+303:    13fb:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+304:    13ff:	48 89 c7             	mov    %rax,%rdi
+306:    1407:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+317:    1422:	48 89 e5             	mov    %rsp,%rbp
+319:    1429:	48 8d 05 22 0c 00 00 	lea    0xc22(%rip),%rax        # 2052 <_IO_stdin_used+0x52>
+320:    1430:	48 89 45 f0          	mov    %rax,-0x10(%rbp)
+321:    1434:	48 8d 05 28 0c 00 00 	lea    0xc28(%rip),%rax        # 2063 <_IO_stdin_used+0x63>
+322:    143b:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+323:    143f:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+324:    1443:	48 89 c7             	mov    %rax,%rdi
+326:    144b:	89 45 ec             	mov    %eax,-0x14(%rbp)
+329:    1454:	8b 45 ec             	mov    -0x14(%rbp),%eax
+330:    1457:	89 c6                	mov    %eax,%esi
+331:    1459:	48 8d 05 20 0c 00 00 	lea    0xc20(%rip),%rax        # 2080 <_IO_stdin_used+0x80>
+332:    1460:	48 89 c7             	mov    %rax,%rdi
+333:    1463:	b8 00 00 00 00       	mov    $0x0,%eax
+335:    146d:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+336:    1471:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+337:    1475:	48 89 d6             	mov    %rdx,%rsi
+338:    1478:	48 89 c7             	mov    %rax,%rdi
+340:    1480:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+341:    1484:	48 89 c6             	mov    %rax,%rsi
+342:    1487:	48 8d 05 1a 0c 00 00 	lea    0xc1a(%rip),%rax        # 20a8 <_IO_stdin_used+0xa8>
+343:    148e:	48 89 c7             	mov    %rax,%rdi
+344:    1491:	b8 00 00 00 00       	mov    $0x0,%eax
+346:    149b:	b8 00 00 00 00       	mov    $0x0,%eax

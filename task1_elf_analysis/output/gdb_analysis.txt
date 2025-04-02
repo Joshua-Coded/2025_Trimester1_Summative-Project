@@ -1,0 +1,195 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04.2) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from binary_file...
+(No debugging symbols found in binary_file)
+"
+=== Binary Information ===
+"Symbols from "/analysis/binary_file".
+Local exec file:
+	`/analysis/binary_file', file type elf64-x86-64.
+	Entry point: 0x1140
+	0x0000000000000318 - 0x0000000000000334 is .interp
+	0x0000000000000338 - 0x0000000000000368 is .note.gnu.property
+	0x0000000000000368 - 0x000000000000038c is .note.gnu.build-id
+	0x000000000000038c - 0x00000000000003ac is .note.ABI-tag
+	0x00000000000003b0 - 0x00000000000003d4 is .gnu.hash
+	0x00000000000003d8 - 0x0000000000000528 is .dynsym
+	0x0000000000000528 - 0x00000000000005fa is .dynstr
+	0x00000000000005fa - 0x0000000000000616 is .gnu.version
+	0x0000000000000618 - 0x0000000000000658 is .gnu.version_r
+	0x0000000000000658 - 0x0000000000000718 is .rela.dyn
+	0x0000000000000718 - 0x00000000000007d8 is .rela.plt
+	0x0000000000001000 - 0x000000000000101b is .init
+	0x0000000000001020 - 0x00000000000010b0 is .plt
+	0x00000000000010b0 - 0x00000000000010c0 is .plt.got
+	0x00000000000010c0 - 0x0000000000001140 is .plt.sec
+	0x0000000000001140 - 0x00000000000014a2 is .text
+	0x00000000000014a4 - 0x00000000000014b1 is .fini
+	0x0000000000002000 - 0x00000000000020d1 is .rodata
+	0x00000000000020d4 - 0x0000000000002120 is .eh_frame_hdr
+	0x0000000000002120 - 0x000000000000222c is .eh_frame
+	0x0000000000003d80 - 0x0000000000003d88 is .init_array
+	0x0000000000003d88 - 0x0000000000003d90 is .fini_array
+	0x0000000000003d90 - 0x0000000000003f80 is .dynamic
+	0x0000000000003f80 - 0x0000000000004000 is .got
+	0x0000000000004000 - 0x0000000000004010 is .data
+	0x0000000000004010 - 0x0000000000004018 is .bss
+"
+=== Functions in Binary ===
+"All defined functions:
+
+Non-debugging symbols:
+0x0000000000001000  _init
+0x00000000000010b0  __cxa_finalize@plt
+0x00000000000010c0  toupper@plt
+0x00000000000010d0  fclose@plt
+0x00000000000010e0  __stack_chk_fail@plt
+0x00000000000010f0  printf@plt
+0x0000000000001100  fputs@plt
+0x0000000000001110  fgets@plt
+0x0000000000001120  fopen@plt
+0x0000000000001130  perror@plt
+0x0000000000001140  _start
+0x0000000000001170  deregister_tm_clones
+0x00000000000011a0  register_tm_clones
+0x00000000000011e0  __do_global_dtors_aux
+0x0000000000001220  frame_dummy
+0x0000000000001229  count_names
+0x00000000000012d2  to_uppercase
+0x0000000000001311  convert_names_to_uppercase
+0x000000000000141d  main
+0x00000000000014a4  _fini
+"
+=== Main Function Disassembly ===
+"Dump of assembler code for function main:
+   0x000000000000141d <+0>:	endbr64 
+   0x0000000000001421 <+4>:	push   rbp
+   0x0000000000001422 <+5>:	mov    rbp,rsp
+   0x0000000000001425 <+8>:	sub    rsp,0x20
+   0x0000000000001429 <+12>:	lea    rax,[rip+0xc22]        # 0x2052
+   0x0000000000001430 <+19>:	mov    QWORD PTR [rbp-0x10],rax
+   0x0000000000001434 <+23>:	lea    rax,[rip+0xc28]        # 0x2063
+   0x000000000000143b <+30>:	mov    QWORD PTR [rbp-0x8],rax
+   0x000000000000143f <+34>:	mov    rax,QWORD PTR [rbp-0x10]
+   0x0000000000001443 <+38>:	mov    rdi,rax
+   0x0000000000001446 <+41>:	call   0x1229 <count_names>
+   0x000000000000144b <+46>:	mov    DWORD PTR [rbp-0x14],eax
+   0x000000000000144e <+49>:	cmp    DWORD PTR [rbp-0x14],0xffffffff
+   0x0000000000001452 <+53>:	je     0x149b <main+126>
+   0x0000000000001454 <+55>:	mov    eax,DWORD PTR [rbp-0x14]
+   0x0000000000001457 <+58>:	mov    esi,eax
+   0x0000000000001459 <+60>:	lea    rax,[rip+0xc20]        # 0x2080
+   0x0000000000001460 <+67>:	mov    rdi,rax
+   0x0000000000001463 <+70>:	mov    eax,0x0
+   0x0000000000001468 <+75>:	call   0x10f0 <printf@plt>
+   0x000000000000146d <+80>:	mov    rdx,QWORD PTR [rbp-0x8]
+   0x0000000000001471 <+84>:	mov    rax,QWORD PTR [rbp-0x10]
+   0x0000000000001475 <+88>:	mov    rsi,rdx
+   0x0000000000001478 <+91>:	mov    rdi,rax
+   0x000000000000147b <+94>:	call   0x1311 <convert_names_to_uppercase>
+   0x0000000000001480 <+99>:	mov    rax,QWORD PTR [rbp-0x8]
+   0x0000000000001484 <+103>:	mov    rsi,rax
+   0x0000000000001487 <+106>:	lea    rax,[rip+0xc1a]        # 0x20a8
+   0x000000000000148e <+113>:	mov    rdi,rax
+   0x0000000000001491 <+116>:	mov    eax,0x0
+   0x0000000000001496 <+121>:	call   0x10f0 <printf@plt>
+   0x000000000000149b <+126>:	mov    eax,0x0
+   0x00000000000014a0 <+131>:	leave  
+   0x00000000000014a1 <+132>:	ret    
+End of assembler dump.
+"
+=== Setting Breakpoints ===
+"Breakpoint 1 at 0x1425
+Breakpoint 2 at 0x1231
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000001425 <main+8>
+2       breakpoint     keep y   0x0000000000001231 <count_names+8>
+"
+=== Running Program ===
+"[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, 0x0000555555555425 in main ()
+"
+=== Main Function Variables ===
+"No symbol table info available.
+No symbol table info available.
+"
+=== Continuing to count_names ===
+"
+Breakpoint 2, 0x0000555555555231 in count_names ()
+"
+=== count_names Function Variables ===
+"No symbol table info available.
+No symbol table info available.
+"
+=== Stack Frame ===
+"Stack level 0, frame at 0x7fffffffe5d0:
+ rip = 0x555555555231 in count_names; saved rip = 0x55555555544b
+ called by frame at 0x7fffffffe600
+ Arglist at 0x7fffffffe5c0, args: 
+ Locals at 0x7fffffffe5c0, Previous frame's sp is 0x7fffffffe5d0
+ Saved registers:
+  rbp at 0x7fffffffe5c0, rip at 0x7fffffffe5c8
+"
+=== count_names Disassembly ===
+"Dump of assembler code for function count_names:
+   0x0000555555555229 <+0>:	endbr64 
+   0x000055555555522d <+4>:	push   rbp
+   0x000055555555522e <+5>:	mov    rbp,rsp
+=> 0x0000555555555231 <+8>:	sub    rsp,0x90
+   0x0000555555555238 <+15>:	mov    QWORD PTR [rbp-0x88],rdi
+   0x000055555555523f <+22>:	mov    rax,QWORD PTR fs:0x28
+   0x0000555555555248 <+31>:	mov    QWORD PTR [rbp-0x8],rax
+   0x000055555555524c <+35>:	xor    eax,eax
+   0x000055555555524e <+37>:	mov    DWORD PTR [rbp-0x7c],0x0
+   0x0000555555555255 <+44>:	mov    rax,QWORD PTR [rbp-0x88]
+   0x000055555555525c <+51>:	lea    rdx,[rip+0xda5]        # 0x555555556008
+   0x0000555555555263 <+58>:	mov    rsi,rdx
+   0x0000555555555266 <+61>:	mov    rdi,rax
+   0x0000555555555269 <+64>:	call   0x555555555120 <fopen@plt>
+   0x000055555555526e <+69>:	mov    QWORD PTR [rbp-0x78],rax
+   0x0000555555555272 <+73>:	cmp    QWORD PTR [rbp-0x78],0x0
+   0x0000555555555277 <+78>:	jne    0x555555555293 <count_names+106>
+   0x0000555555555279 <+80>:	lea    rax,[rip+0xd8a]        # 0x55555555600a
+   0x0000555555555280 <+87>:	mov    rdi,rax
+   0x0000555555555283 <+90>:	call   0x555555555130 <perror@plt>
+   0x0000555555555288 <+95>:	mov    eax,0xffffffff
+   0x000055555555528d <+100>:	jmp    0x5555555552bc <count_names+147>
+   0x000055555555528f <+102>:	add    DWORD PTR [rbp-0x7c],0x1
+   0x0000555555555293 <+106>:	mov    rdx,QWORD PTR [rbp-0x78]
+   0x0000555555555297 <+110>:	lea    rax,[rbp-0x70]
+   0x000055555555529b <+114>:	mov    esi,0x64
+   0x00005555555552a0 <+119>:	mov    rdi,rax
+   0x00005555555552a3 <+122>:	call   0x555555555110 <fgets@plt>
+   0x00005555555552a8 <+127>:	test   rax,rax
+   0x00005555555552ab <+130>:	jne    0x55555555528f <count_names+102>
+   0x00005555555552ad <+132>:	mov    rax,QWORD PTR [rbp-0x78]
+   0x00005555555552b1 <+136>:	mov    rdi,rax
+   0x00005555555552b4 <+139>:	call   0x5555555550d0 <fclose@plt>
+   0x00005555555552b9 <+144>:	mov    eax,DWORD PTR [rbp-0x7c]
+   0x00005555555552bc <+147>:	mov    rdx,QWORD PTR [rbp-0x8]
+   0x00005555555552c0 <+151>:	sub    rdx,QWORD PTR fs:0x28
+   0x00005555555552c9 <+160>:	je     0x5555555552d0 <count_names+167>
+   0x00005555555552cb <+162>:	call   0x5555555550e0 <__stack_chk_fail@plt>
+   0x00005555555552d0 <+167>:	leave  
+   0x00005555555552d1 <+168>:	ret    
+End of assembler dump.
+A debugging session is active.
+
+	Inferior 1 [process 63] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]

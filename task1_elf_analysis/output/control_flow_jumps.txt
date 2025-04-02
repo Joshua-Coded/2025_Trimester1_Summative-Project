@@ -1,0 +1,41 @@
+12:    1012:	74 02                	je     1016 <_init+0x16>
+21:    1026:	f2 ff 25 63 2f 00 00 	bnd jmp *0x2f63(%rip)        # 3f90 <_GLOBAL_OFFSET_TABLE_+0x10>
+25:    1039:	f2 e9 e1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+29:    1049:	f2 e9 d1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+33:    1059:	f2 e9 c1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+37:    1069:	f2 e9 b1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+41:    1079:	f2 e9 a1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+45:    1089:	f2 e9 91 ff ff ff    	bnd jmp 1020 <_init+0x20>
+49:    1099:	f2 e9 81 ff ff ff    	bnd jmp 1020 <_init+0x20>
+53:    10a9:	f2 e9 71 ff ff ff    	bnd jmp 1020 <_init+0x20>
+60:    10b4:	f2 ff 25 3d 2f 00 00 	bnd jmp *0x2f3d(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>
+67:    10c4:	f2 ff 25 cd 2e 00 00 	bnd jmp *0x2ecd(%rip)        # 3f98 <toupper@GLIBC_2.2.5>
+72:    10d4:	f2 ff 25 c5 2e 00 00 	bnd jmp *0x2ec5(%rip)        # 3fa0 <fclose@GLIBC_2.2.5>
+77:    10e4:	f2 ff 25 bd 2e 00 00 	bnd jmp *0x2ebd(%rip)        # 3fa8 <__stack_chk_fail@GLIBC_2.4>
+82:    10f4:	f2 ff 25 b5 2e 00 00 	bnd jmp *0x2eb5(%rip)        # 3fb0 <printf@GLIBC_2.2.5>
+87:    1104:	f2 ff 25 ad 2e 00 00 	bnd jmp *0x2ead(%rip)        # 3fb8 <fputs@GLIBC_2.2.5>
+92:    1114:	f2 ff 25 a5 2e 00 00 	bnd jmp *0x2ea5(%rip)        # 3fc0 <fgets@GLIBC_2.2.5>
+97:    1124:	f2 ff 25 9d 2e 00 00 	bnd jmp *0x2e9d(%rip)        # 3fc8 <fopen@GLIBC_2.2.5>
+102:    1134:	f2 ff 25 95 2e 00 00 	bnd jmp *0x2e95(%rip)        # 3fd0 <perror@GLIBC_2.2.5>
+128:    1181:	74 15                	je     1198 <deregister_tm_clones+0x28>
+131:    118d:	74 09                	je     1198 <deregister_tm_clones+0x28>
+132:    118f:	ff e0                	jmp    *%rax
+146:    11c2:	74 14                	je     11d8 <register_tm_clones+0x38>
+149:    11ce:	74 08                	je     11d8 <register_tm_clones+0x38>
+150:    11d0:	ff e0                	jmp    *%rax
+158:    11eb:	75 2b                	jne    1218 <__do_global_dtors_aux+0x38>
+163:    11f9:	74 0c                	je     1207 <__do_global_dtors_aux+0x27>
+176:    1224:	e9 77 ff ff ff       	jmp    11a0 <register_tm_clones>
+196:    1277:	75 1a                	jne    1293 <count_names+0x6a>
+201:    128d:	eb 2d                	jmp    12bc <count_names+0x93>
+209:    12ab:	75 e2                	jne    128f <count_names+0x66>
+217:    12c9:	74 05                	je     12d0 <count_names+0xa7>
+228:    12e2:	eb 1e                	jmp    1302 <to_uppercase+0x30>
+241:    130b:	75 d7                	jne    12e4 <to_uppercase+0x12>
+265:    135f:	75 14                	jne    1375 <convert_names_to_uppercase+0x64>
+269:    1370:	e9 92 00 00 00       	jmp    1407 <convert_names_to_uppercase+0xf6>
+277:    1397:	75 3c                	jne    13d5 <convert_names_to_uppercase+0xc4>
+284:    13b4:	eb 51                	jmp    1407 <convert_names_to_uppercase+0xf6>
+299:    13ed:	75 c7                	jne    13b6 <convert_names_to_uppercase+0xa5>
+309:    1414:	74 05                	je     141b <convert_names_to_uppercase+0x10a>
+328:    1452:	74 47                	je     149b <main+0x7e>

@@ -1,25 +1,25 @@
-12:    1014: ff d0                        	callq	*%rax
-104:    115f: ff 15 73 2e 00 00            	callq	*11891(%rip)            # 0x3fd8 <_GLOBAL_OFFSET_TABLE_+0x58>
-148:    1202: e8 a9 fe ff ff               	callq	0x10b0 <.plt.got>
-149:    1207: e8 64 ff ff ff               	callq	0x1170 <deregister_tm_clones>
-175:    1269: e8 b2 fe ff ff               	callq	0x1120 <.plt.sec+0x60>
-181:    1283: e8 a8 fe ff ff               	callq	0x1130 <.plt.sec+0x70>
-189:    12a3: e8 68 fe ff ff               	callq	0x1110 <.plt.sec+0x50>
-194:    12b4: e8 17 fe ff ff               	callq	0x10d0 <.plt.sec+0x10>
-199:    12cb: e8 10 fe ff ff               	callq	0x10e0 <.plt.sec+0x20>
-214:    12f0: e8 cb fd ff ff               	callq	0x10c0 <.plt.sec>
-242:    1351: e8 ca fd ff ff               	callq	0x1120 <.plt.sec+0x60>
-248:    136b: e8 c0 fd ff ff               	callq	0x1130 <.plt.sec+0x70>
-254:    1389: e8 92 fd ff ff               	callq	0x1120 <.plt.sec+0x60>
-260:    13a3: e8 88 fd ff ff               	callq	0x1130 <.plt.sec+0x70>
-263:    13af: e8 1c fd ff ff               	callq	0x10d0 <.plt.sec+0x10>
-267:    13bd: e8 10 ff ff ff               	callq	0x12d2 <to_uppercase>
-272:    13d0: e8 2b fd ff ff               	callq	0x1100 <.plt.sec+0x40>
-277:    13e5: e8 26 fd ff ff               	callq	0x1110 <.plt.sec+0x50>
-282:    13f6: e8 d5 fc ff ff               	callq	0x10d0 <.plt.sec+0x10>
-285:    1402: e8 c9 fc ff ff               	callq	0x10d0 <.plt.sec+0x10>
-289:    1416: e8 c5 fc ff ff               	callq	0x10e0 <.plt.sec+0x20>
-304:    1446: e8 de fd ff ff               	callq	0x1229 <count_names>
-313:    1468: e8 83 fc ff ff               	callq	0x10f0 <.plt.sec+0x30>
-318:    147b: e8 91 fe ff ff               	callq	0x1311 <convert_names_to_uppercase>
-324:    1496: e8 55 fc ff ff               	callq	0x10f0 <.plt.sec+0x30>
+13:    1014:	ff d0                	call   *%rax
+119:    115f:	ff 15 73 2e 00 00    	call   *0x2e73(%rip)        # 3fd8 <__libc_start_main@GLIBC_2.34>
+165:    1202:	e8 a9 fe ff ff       	call   10b0 <__cxa_finalize@plt>
+166:    1207:	e8 64 ff ff ff       	call   1170 <deregister_tm_clones>
+193:    1269:	e8 b2 fe ff ff       	call   1120 <fopen@plt>
+199:    1283:	e8 a8 fe ff ff       	call   1130 <perror@plt>
+207:    12a3:	e8 68 fe ff ff       	call   1110 <fgets@plt>
+212:    12b4:	e8 17 fe ff ff       	call   10d0 <fclose@plt>
+218:    12cb:	e8 10 fe ff ff       	call   10e0 <__stack_chk_fail@plt>
+233:    12f0:	e8 cb fd ff ff       	call   10c0 <toupper@plt>
+262:    1351:	e8 ca fd ff ff       	call   1120 <fopen@plt>
+268:    136b:	e8 c0 fd ff ff       	call   1130 <perror@plt>
+274:    1389:	e8 92 fd ff ff       	call   1120 <fopen@plt>
+280:    13a3:	e8 88 fd ff ff       	call   1130 <perror@plt>
+283:    13af:	e8 1c fd ff ff       	call   10d0 <fclose@plt>
+287:    13bd:	e8 10 ff ff ff       	call   12d2 <to_uppercase>
+292:    13d0:	e8 2b fd ff ff       	call   1100 <fputs@plt>
+297:    13e5:	e8 26 fd ff ff       	call   1110 <fgets@plt>
+302:    13f6:	e8 d5 fc ff ff       	call   10d0 <fclose@plt>
+305:    1402:	e8 c9 fc ff ff       	call   10d0 <fclose@plt>
+310:    1416:	e8 c5 fc ff ff       	call   10e0 <__stack_chk_fail@plt>
+325:    1446:	e8 de fd ff ff       	call   1229 <count_names>
+334:    1468:	e8 83 fc ff ff       	call   10f0 <printf@plt>
+339:    147b:	e8 91 fe ff ff       	call   1311 <convert_names_to_uppercase>
+345:    1496:	e8 55 fc ff ff       	call   10f0 <printf@plt>

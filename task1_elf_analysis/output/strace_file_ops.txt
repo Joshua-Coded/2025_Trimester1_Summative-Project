@@ -1,0 +1,14 @@
+execve("./binary_file", ["./binary_file"], 0x7fffd2d348b0 /* 10 vars */) = 0
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=11791, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "data/entries.txt", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=17, ...}, AT_EMPTY_PATH) = 0
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "data/entries.txt", O_RDONLY) = 3
+openat(AT_FDCWD, "data/names_uppercase.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 4
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=17, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
++++ exited with 0 +++
