@@ -1,0 +1,21 @@
+000000000000141d <main>:
+    141d: f3 0f 1e fa                  	endbr64
+    1421: 55                           	pushq	%rbp
+    1422: 48 89 e5                     	movq	%rsp, %rbp
+    1425: 48 83 ec 20                  	subq	$32, %rsp
+    1429: 48 8d 05 22 0c 00 00         	leaq	3106(%rip), %rax        # 0x2052 <_IO_stdin_used+0x52>
+    1430: 48 89 45 f0                  	movq	%rax, -16(%rbp)
+    1434: 48 8d 05 28 0c 00 00         	leaq	3112(%rip), %rax        # 0x2063 <_IO_stdin_used+0x63>
+    143b: 48 89 45 f8                  	movq	%rax, -8(%rbp)
+    143f: 48 8b 45 f0                  	movq	-16(%rbp), %rax
+    1443: 48 89 c7                     	movq	%rax, %rdi
+    1446: e8 de fd ff ff               	callq	0x1229 <count_names>
+    144b: 89 45 ec                     	movl	%eax, -20(%rbp)
+    144e: 83 7d ec ff                  	cmpl	$-1, -20(%rbp)
+    1452: 74 47                        	je	0x149b <main+0x7e>
+    1454: 8b 45 ec                     	movl	-20(%rbp), %eax
+    1457: 89 c6                        	movl	%eax, %esi
+    1459: 48 8d 05 20 0c 00 00         	leaq	3104(%rip), %rax        # 0x2080 <_IO_stdin_used+0x80>
+    1460: 48 89 c7                     	movq	%rax, %rdi
+    1463: b8 00 00 00 00               	movl	$0, %eax
+    1468: e8 83 fc ff ff               	callq	0x10f0 <.plt.sec+0x30>
